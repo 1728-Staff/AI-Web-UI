@@ -1,8 +1,13 @@
 <?php include '../templates/header.php'; ?>
-<div id="chat-container">
-    <div id="chat-box"></div>
-    <input type="text" id="user-input" placeholder="Type your message...">
-    <button id="send-btn">Send</button>
+
+<div id="landing-wrapper">
+    <div class="landing-content">
+        <h1 class="system-title">SynapseIQ</h1>
+        <p class="system-tagline">
+            Intelligent access to your ERP insights, right at your fingertips.
+        </p>
+        <a href="department.php" class="start-button">Let's Get Started</a>
+    </div>
 </div>
-<script src="script.js"></script>
+
 <?php include '../templates/footer.php'; ?>
