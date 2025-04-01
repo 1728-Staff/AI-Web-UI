@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SynapseIQ | Intelligent ERP Interface</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="AI-Web-UI/public/style.css">
 </head>
 <body>
     <header class="top-bar">
