@@ -8,4 +8,4 @@
             <p class="text-sm">© Brought to you by 1728studios.com</p>
         </div>
     </footer>
-    <script src='background.js'></script>
+   
