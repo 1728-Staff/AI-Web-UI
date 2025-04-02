@@ -1,7 +1,8 @@
 <?php include '../templates/header.php'; ?>
 
 <div id="department-wrapper">
-    <h2>Select Your Department</h2>
+    <h2 class="section-title">Select Your Department</h2>
+    <p class="section-subtitle">Where would you like to start today?</p>
 
     <div class="department-list">
         <div class="department-option">
