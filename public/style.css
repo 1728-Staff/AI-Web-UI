@@ -65,3 +65,50 @@ html, body {
 .start-button:hover {
     background-color: #0056b3;
 }
+
+/* ---------------------- */
+/* 🗂️ Department Select  */
+/* ---------------------- */
+
+#department-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.department-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.department-option {
+    display: flex;
+    align-items: center;
+}
+
+.bullet {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #dcdcdc;
+}
+
+.dept-button {
+    font-size: 1.1em;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.dept-button:hover {
+    background-color: #0056b3;
+}
