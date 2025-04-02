@@ -82,9 +82,9 @@ html, body {
 
 .department-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     margin-top: 20px;
 }
 
