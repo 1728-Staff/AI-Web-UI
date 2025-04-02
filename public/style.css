@@ -1,1 +1,67 @@
+/* ---------------------- */
+/* 🌐 Base Styles         */
+/* ---------------------- */
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #2f4f4f; /* darkslategray */
+    color: #dcdcdc; /* gainsboro */
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.top-bar {
+    background: #2a2f45;
+    color: #dcdcdc;
+    padding: 20px;
+    text-align: center;
+}
+
+.system-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Footer */
+.footer-bar {
+    background: #2a2f45;
+    color: #dcdcdc;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+/* Landing Page */
+#landing-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.start-button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
