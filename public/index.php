@@ -2,7 +2,10 @@
 
 <div id="landing-wrapper">
     <div class="landing-content">
-        <a href="department.php" class="start-button">Let's Get Started</a>
+        <h1 class="system-title">Welcome to SynapseAI</h1>
+        <p class="system-tagline">Your smart, secure, and adaptable workspace.</p>
+        
+        <a href="department.php" class="start-button">Let's get Started</a>
     </div>
 </div>
 
