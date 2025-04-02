@@ -1,6 +1,6 @@
-/* ---------------------- */
-/* 🌐 Base Styles         */
-/* ---------------------- */
+/* ------------------------------ */
+/* 🌐 BASE LAYOUT + TYPOGRAPHY    */
+/* ------------------------------ */
 
 html, body {
     height: 100%;
@@ -8,36 +8,53 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: #2f4f4f; /* darkslategray */
-    color: #dcdcdc; /* gainsboro */
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #2e3a3f, #1c2428);
+    color: #e2e8ec;
+    font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
-/* Header */
+/* Universal resets */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------ */
+/* 🔺 HEADER + FOOTER             */
+/* ------------------------------ */
+
 .top-bar {
-    background: #2a2f45;
-    color: #dcdcdc;
-    padding: 20px;
+    background: #1f2933;
+    color: #e2e8ec;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .system-title {
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: bold;
-    margin: 0;
 }
 
-/* Footer */
 .footer-bar {
-    background: #2a2f45;
-    color: #dcdcdc;
+    background: #1f2933;
+    color: #a0adb5;
     text-align: center;
-    padding: 10px;
-    margin-top: auto;
+    padding: 15px 0;
     font-size: 0.9em;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
 }
 
-/* Landing Page */
+/* ------------------------------ */
+/* 🎯 LANDING PAGE                */
+/* ------------------------------ */
+
 #landing-wrapper {
     flex: 1;
     display: flex;
@@ -47,42 +64,41 @@ html, body {
 }
 
 .landing-content {
-    padding: 40px;
-}
-
-.system-title {
-    font-size: 2.8em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #dcdcdc;
+    background-color: #3b4a50;
+    border-radius: 12px;
+    padding: 40px 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: auto;
 }
 
 .system-tagline {
     font-size: 1.3em;
+    color: #a0adb5;
     margin-bottom: 40px;
-    color: #cccccc;
 }
 
 .start-button {
-    padding: 14px 30px;
-    font-size: 1.2em;
-    background-color: #007BFF;
+    background-color: #3da9fc;
     color: white;
+    padding: 14px 32px;
+    font-size: 1.1em;
+    font-weight: 600;
     border: none;
     border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    text-decoration: none;
+    display: inline-block;
 }
 
 .start-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.03);
+    background-color: #297acc;
+    transform: translateY(-1px);
 }
 
-/* ---------------------- */
-/* 🗂️ Department Select  */
-/* ---------------------- */
+/* ------------------------------ */
+/* 🗂️ DEPARTMENT SELECT PAGE      */
+/* ------------------------------ */
 
 #department-wrapper {
     flex: 1;
@@ -98,13 +114,12 @@ html, body {
     font-size: 2.2em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #dcdcdc;
 }
 
 .section-subtitle {
     font-size: 1.1em;
     margin-bottom: 30px;
-    color: #cccccc;
+    color: #a0adb5;
 }
 
 .department-list {
@@ -128,13 +143,44 @@ html, body {
 .dept-button {
     font-size: 1.1em;
     padding: 12px 24px;
-    background-color: #007BFF;
+    background-color: #3da9fc;
     color: white;
     border-radius: 6px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.1s;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .dept-button:hover {
-    background-color: #0056b3;
+    background-color: #297acc;
+    transform: translateY(-1px);
+}
+
+/* ------------------------------ */
+/* 🟢 CARDS + PANELS (Future Use) */
+/* ------------------------------ */
+
+.card {
+    background-color: #3b4a50;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* ------------------------------ */
+/* ✅ STATUS COLORS (Accent Use)  */
+/* ------------------------------ */
+
+.text-success {
+    color: #4ade80;
+}
+
+.text-warning {
+    color: #fbbf24;
+}
+
+.text-accent {
+    color: #3da9fc;
 }
