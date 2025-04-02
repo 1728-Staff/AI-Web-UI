@@ -7,5 +7,5 @@
 </head>
 <body>
     <header class="top-bar">
-        <h1 class="system-title">SynapseAU</h1>
+        <h1 class="system-title">SynapseAI</h1>
     </header>
