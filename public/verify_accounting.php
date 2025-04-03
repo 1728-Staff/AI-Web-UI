@@ -2,7 +2,7 @@
 session_start();
 
 // Connect to MySQL
-$mysqli = new mysqli("localhost", "root", "your_mysql_password", "synapse_auth");
+$mysqli = new mysqli("localhost", "synapse_user", "StrongPassword123!", "synapse_auth");
 
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
