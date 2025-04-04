@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['username']) || $_SESSION['department'] !== 'accounting') {
+if (!isset($_SESSION['username']) || $_SESSION['department'] !== 'finance') {
     header("Location: login_finance.php");
     exit();
 }
