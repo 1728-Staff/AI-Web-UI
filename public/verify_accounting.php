@@ -8,11 +8,11 @@ if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
 
-file_put_contents("login_debug.log", "USERNAME=[$username] | PASSWORD=[$password]\n", FILE_APPEND);
-
 // Sanitize user input
 $username = trim($_POST['username']);
 $password = trim($_POST['password']);
+
+file_put_contents("login_debug.log", "USERNAME=[$username] | PASSWORD=[$password]\n", FILE_APPEND);
 
 // Prepare and execute SQL query
 $stmt = $mysqli->prepare("SELECT password_hash FROM accounting_users WHERE username = ?");
