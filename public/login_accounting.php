@@ -2,7 +2,7 @@
 
 <div id="login-wrapper">
     <form class="login-form" method="POST" action="verify_accounting.php">
-        <h2>Login Template</h2>
+        <h2>Accounting Login</h2>
 
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
