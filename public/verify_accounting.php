@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+// Block if no POST data
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['username'], $_POST['password'])) {
+    header("Location: login_accounting.php?error=invalidrequest");
+    exit();
+}
 // Connect to MySQL
 $mysqli = new mysqli("localhost", "synapse_user", "StrongPassword123!", "synapse_auth");
 
