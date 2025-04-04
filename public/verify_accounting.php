@@ -12,8 +12,6 @@ if ($mysqli->connect_error) {
 $username = trim($_POST['username']);
 $password = trim($_POST['password']);
 
-file_put_contents("login_debug.log", "Username: [$username] | Password: [$password]\n", FILE_APPEND);
-
 // Prepare and execute SQL query
 $stmt = $mysqli->prepare("SELECT password_hash FROM accounting_users WHERE username = ?");
 $stmt->bind_param("s", $username);
