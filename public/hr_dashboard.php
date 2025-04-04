@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['username']) || $_SESSION['department'] !== 'accounting') {
-    header("Location: login_accounting.php");
+    header("Location: login_hr.php");
     exit();
 }
 ?>
