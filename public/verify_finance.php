@@ -3,7 +3,7 @@ session_start();
 
 // Block if no POST data
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['username'], $_POST['password'])) {
-    header("Location: login_accounting.php?error=invalidrequest");
+    header("Location: login_finance.php?error=invalidrequest");
     exit();
 }
 // Connect to MySQL
@@ -37,12 +37,12 @@ if ($stmt->num_rows === 1) {
         exit();
     } else {
         // Wrong password
-        header("Location: login_accounting.php?error=invalid");
+        header("Location: login_finance.php?error=invalid");
         exit();
     }
 } else {
     // No such user
-    header("Location: login_accounting.php?error=notfound");
+    header("Location: login_finance.php?error=notfound");
     exit();
 }
 
